@@ -1,26 +1,32 @@
 /* form1 */
-.left,
-.right {
+.container {
+    display: flex;
+}
+
+/* .left,
+.right { */
     /* display: flex;
     flex-direction: row; */
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 0; */
     /* display: flex; */
-}
+/* } */
 
 .left {
-    left: 0;
+    /* left: 0; */
     /* right: 10%; */
     border: 1px solid green;
-    width: 20%;
+    width: 15vw;
+    height: 97vh;
 }
 
 .right {
-    left: 20%;
-    right: 0;
+    /* left: 20%;
+    right: 0; */
     border: 1px solid yellow;
-    /* width: 90%; */
+    width: 85vw;
+    height: 97vh;
 }
 
 /* .top {
@@ -28,13 +34,18 @@
     border: 1px solid blue;
 } */
 
+button {
+    outline: none;
+}
+
 img {
-    position: absolute;
+    position: relative;
     top: 1%;
-    left: 45%;
+    left: 50%;
     width: 60px;
+    margin: 0 auto;
     transform: translate(-50%, 0);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 /* .bottom {
@@ -45,13 +56,21 @@ img {
 
 .form {
     position: relative;
-    margin-top: 10%;
-    /* top: 40%; */
+    /* margin-top: 1%; */
+    top: 2vh;
+    left: 15vh;
     width: 1000px;
     height: 450px;
-    border: 1px solid #EDEDED;
+    border: 2px solid #EDEDED;
     background-color: #FFFFFF;
 }
+
+/* .form:hover {
+    position: relative;
+    top: 2vh;
+    left: 11vh;
+    box-shadow: -2px 2px #EDEDED;
+} */
 
 .form::before,
 .form::after {
@@ -63,19 +82,61 @@ img {
 }
 
 .form::before {
-    left: -10px;
+    left: -13px;
     top: 10px;
-    /* z-index: -1; */
-    border: 2px solid purple;
+    z-index: -1;
+    border: 2px solid #EDEDED;
 }
 
 .form::after {
-    left: -20px;
+    left: -25px;
     top: 20px;
-    /* z-index: -2; */
-    border: 2px solid pink;
+    z-index: -2;
+    border: 2px solid #EDEDED;
+    box-shadow: -10px 10px #EDEDED;
 }
 
+.buttons {
+    position: relative;
+    top: 9vh;
+}
+
+.back,
+.next {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #EDEDED;
+}
+
+.back {
+    position: relative;
+    left: 20vw;
+    transition: all 1s;
+}
+
+.back:hover {
+    border-radius: 0;
+    box-shadow: 5px 5px #333333;
+    /* position: relative;
+    top: 5vw;
+    left: 25vw; */
+    transform: all 5s;
+}
+
+.next {
+    position: relative;
+    left: 45vw;
+    transition: all 1s;
+}
+
+.next:hover {
+    border-radius: 0;
+    box-shadow: -5px 5px #333333;
+    transform: all 5s;
+}
 
 
 
