@@ -4,6 +4,7 @@ body {
     color: #333333;
 }
 
+/* homepage */
 .welcome {
     position: absolute;
     top: 0;
@@ -30,10 +31,8 @@ img {
     width: fit-content;
     background-color: #F5F5F5;
     font-size: 48px;
-    /* font-weight: 700; */
     font-weight: bolder;
     color: #FFBD2D;
-    /* border: 1px solid blue; */
 }
 
 .remarks {
@@ -41,12 +40,9 @@ img {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -5%);
-    /* width: fit-content; */
     font-size: 20px;
-    /* font-weight: 600; */
     font-weight: bold;
     color: #718096;
-    /* border: 1px solid blue; */
 }
 
 strong {
@@ -64,3 +60,4 @@ button {
     border: none;
     background-color: #EDEDED;
 }
+
