@@ -10,14 +10,12 @@ button {
 }
 
 .left {
-    /* border: 1px solid green; */
     width: 15vw;
     height: 97vh;
 }
 
 div.goto {
     position: relative;
-    /* top: 2vh; */
     left: 5vw;
     width: 80px;
     height: 80px;
@@ -42,24 +40,19 @@ div.goto:hover span.goto {
     display: none;
 }
 
-/* div.goto:hover .button-group { */
 .button-group {
     position: absolute;
     top: -999vh;
     left: -999vw;
-    /* opacity: 0;
-    display: none; */
     transition: all .25s;
 }
 
-/* div.goto .button-group { */
-    div.goto:hover .button-group {
+div.goto:hover .button-group {
     position: absolute;
     top: 6.5vh;
     left: .6vw;
     opacity: 1;
     display: block;
-    /* border: 1px solid red; */
 }
 
 .button-group button {
@@ -67,14 +60,13 @@ div.goto:hover span.goto {
     height: 40px;
     border-radius: 50%;
     margin: 5px;
-    /* padding: 5px; */
     font-size: 12px;
     font-weight: bold;
 }
 
 .close-top,
 .close-bottom {
-    /* display: inline-block; */
+    position: relative;
     width: fit-content;
     font-size: 12px;
 }
@@ -87,36 +79,60 @@ div.goto:hover span.goto {
 }
 
 .close-top {
-    position: relative;
     top: -2vh;
     left: 2.5vw;
-    /* border: 1px solid red; */
 }
 
 .close-bottom {
-    position: relative;
     top: 2vh;
     left: 2vw;
-    /* border: 1px solid red; */
 }
 
-.q1, .q3, .q5, .q7, .q9, .q11, .q13, .q15 {
-    box-shadow: 2px 2px#333333;
+.q1,
+.q3,
+.q5,
+.q7,
+.q9,
+.q11,
+.q13,
+.q15 {
+    box-shadow: 2px 2px #333333;
     transition: all .5s;
 }
 
-.q2, .q4, .q6, .q8, .q10, .q12, .q14, .q16 {
-    box-shadow: -2px 2px#333333;
+.q2,
+.q4,
+.q6,
+.q8,
+.q10,
+.q12,
+.q14,
+.q16 {
+    box-shadow: -2px 2px #333333;
     transition: all .5s;
 }
 
-.q1:hover, .q3:hover, .q5:hover, .q7:hover, .q9:hover, .q11:hover, .q13:hover, .q15:hover {
+.q1:hover,
+.q3:hover,
+.q5:hover,
+.q7:hover,
+.q9:hover,
+.q11:hover,
+.q13:hover,
+.q15:hover {
     border: 3px solid #FFFFFF;
     box-shadow: none;
     transform: translate(.5vh);
 }
 
-.q2:hover, .q4:hover, .q6:hover, .q8:hover, .q10:hover, .q12:hover, .q14:hover, .q16:hover {
+.q2:hover,
+.q4:hover,
+.q6:hover,
+.q8:hover,
+.q10:hover,
+.q12:hover,
+.q14:hover,
+.q16:hover {
     border: 3px solid #FFFFFF;
     box-shadow: none;
     transform: translate(-.5vh);
@@ -124,9 +140,7 @@ div.goto:hover span.goto {
 
 .print {
     position: absolute;
-    /* left: -1vw; */
     left: 6vw;
-    /* top: 80vh; */
     bottom: 10vh;
     font-size: 12px;
     font-weight: bold;
@@ -134,22 +148,10 @@ div.goto:hover span.goto {
     transform: rotate(270deg);
 }
 
-/* .print div.goto:hover {
-    font-size: 12px;
-} */
-
 .right {
-    /* left: 20%;
-    right: 0; */
-    /* border: 1px solid yellow; */
     width: 85vw;
     height: 97vh;
 }
-
-/* .top {
-    position: relative;
-    border: 1px solid blue;
-} */
 
 img {
     position: relative;
@@ -158,32 +160,22 @@ img {
     width: 60px;
     margin: 0 auto;
     transform: translate(-50%, 0);
-    /* border: 1px solid blue; */
 }
-
-/* .bottom {
-    position: relative;
-    top: 15%;
-    border: 1px solid #EDEDED;
-} */
 
 .form {
     position: relative;
-    /* margin-top: 1%; */
     top: 2vh;
     left: 15vh;
     width: 1000px;
     height: 450px;
     border: 2px solid #EDEDED;
     background-color: #FFFFFF;
+    transition: box-shadow .5s;
 }
 
-/* .form:hover {
-    position: relative;
-    top: 2vh;
-    left: 11vh;
-    box-shadow: -2px 2px #EDEDED;
-} */
+.form:hover {
+    box-shadow: -4px 4px 5px .5px #EDEDED;
+}
 
 .form::before,
 .form::after {
@@ -226,39 +218,193 @@ img {
     position: relative;
     top: .25vh;
     left: 20vw;
-    transition: border-radius 1s, box-shadow 1s;
+    transition: border-radius 1s, box-shadow 1s, top 1s;
 }
 
 .back:hover {
     top: 0vh;
-    /* left: 19.5vh; */
     border-radius: 0;
     box-shadow: 5px 5px #333333;
-    /* position: relative;
-    top: 5vw;
-    left: 25vw; */
-    /* transform: all 5s; */
 }
 
 .next {
     position: relative;
     top: .25vh;
     left: 45vw;
-    transition: border-radius 1s, box-shadow 1s;
+    transition: border-radius 1s, box-shadow 1s, top 1s;
 }
 
 .next:hover {
     top: 0vh;
     border-radius: 0;
     box-shadow: -5px 5px #333333;
-    /* transform: all 5s; */
 }
 
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    div.goto {
+        position: relative;
+        top: .5vh;
+        left: 1vw;
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
 
-/* box-shadow:
-0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-0 12.5px 10px rgba(0, 0, 0, 0.06),
-0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-0 100px 80px rgba(0, 0, 0, 0.12); */
+    div.goto:hover {
+        width: 90px;
+        height: 380px;
+        border-radius: 60px;
+    }
+
+    div.goto:hover .button-group {
+        position: absolute;
+        top: 3vh;
+    }
+
+    .button-group button {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .close-top,
+    .close-bottom {
+        position: relative;
+        left: 3.5vw;
+        width: fit-content;
+        font-size: 8px;
+    }
+
+    .close-top:hover,
+    .close-bottom:hover {
+        color: #333333;
+        font-size: 8px;
+        left: 3.5vw;
+    }
+
+    .close-top {
+        top: -1vh;
+    }
+
+    .close-bottom {
+        top: 1vh;
+    }
+
+    .q1,
+    .q3,
+    .q5,
+    .q7,
+    .q9,
+    .q11,
+    .q13,
+    .q15 {
+        box-shadow: 1px 1px#333333;
+        /* transition: all .5s; */
+    }
+
+    .q2,
+    .q4,
+    .q6,
+    .q8,
+    .q10,
+    .q12,
+    .q14,
+    .q16 {
+        box-shadow: -1px 1px#333333;
+        /* transition: all .5s; */
+    }
+
+    .q1:hover,
+    .q3:hover,
+    .q5:hover,
+    .q7:hover,
+    .q9:hover,
+    .q11:hover,
+    .q13:hover,
+    .q15:hover {
+        border: 2px solid #FFFFFF;
+        box-shadow: none;
+        transform: translate(.5vh);
+    }
+
+    .q2:hover,
+    .q4:hover,
+    .q6:hover,
+    .q8:hover,
+    .q10:hover,
+    .q12:hover,
+    .q14:hover,
+    .q16:hover {
+        border: 2px solid #FFFFFF;
+        box-shadow: none;
+        transform: translate(-.5vh);
+    }
+
+    .print {
+        position: absolute;
+        left: 2.5vw;
+        bottom: 12vh;
+        font-size: 8px;
+    }
+
+    img {
+        position: relative;
+        top: .5%;
+        left: 50%;
+        width: 50px;
+    }
+
+    .form {
+        position: relative;
+        top: 2vh;
+        left: 6vh;
+        width: 600px;
+        height: 340px;
+        border: 1.5px solid #EDEDED;
+        background-color: #FFFFFF;
+        transition: box-shadow .5s;
+    }
+
+    .form:hover {
+        box-shadow: -2px 2px 2.5px .25px #EDEDED;
+    }
+
+    .form::before,
+    .form::after {
+        border: 1.5px solid #EDEDED;
+    }
+
+    .form::before {
+        left: -10px;
+        top: 7px;
+        z-index: -1;
+    }
+
+    .form::after {
+        left: -20px;
+        top: 15px;
+        z-index: -2;
+        box-shadow: -7.5px 7.5px #EDEDED;
+    }
+
+    .back,
+    .next {
+        padding: 7.5px 15px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .back:hover {
+        box-shadow: 2.5px 2.5px #333333;
+    }
+
+    .next:hover {
+        top: 0vh;
+        border-radius: 0;
+        box-shadow: -2.5px 2.5px #333333;
+    }
+
+
+}
