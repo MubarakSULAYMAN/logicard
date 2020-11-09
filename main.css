@@ -3,16 +3,6 @@
     display: flex;
 }
 
-/* .left,
-.right { */
-/* display: flex;
-    flex-direction: row; */
-/* position: absolute;
-    top: 0;
-    bottom: 0; */
-/* display: flex; */
-/* } */
-
 button {
     border: none;
     outline: none;
@@ -20,16 +10,14 @@ button {
 }
 
 .left {
-    /* left: 0; */
-    /* right: 10%; */
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 15vw;
     height: 97vh;
 }
 
-.goto {
+div.goto {
     position: relative;
-    top: 2vh;
+    /* top: 2vh; */
     left: 5vw;
     width: 80px;
     height: 80px;
@@ -37,24 +25,41 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
     font-weight: bold;
     color: #FFBD2D;
     background-color: #F6F6F6;
-    transition: all 1s;
+    transition: all .25s;
 }
 
-/* .goto:hover { */
-.goto {
+div.goto:hover {
     width: 120px;
-    height: 490px;
+    height: 520px;
     border-radius: 60px;
 }
 
-.goto .button-group {
+div.goto:hover span.goto {
+    opacity: 0;
+    display: none;
+}
+
+/* div.goto:hover .button-group { */
+.button-group {
     position: absolute;
-    top: 7vh;
+    top: -999vh;
+    left: -999vw;
+    /* opacity: 0;
+    display: none; */
+    transition: all .25s;
+}
+
+/* div.goto .button-group { */
+    div.goto:hover .button-group {
+    position: absolute;
+    top: 6.5vh;
     left: .6vw;
+    opacity: 1;
+    display: block;
+    /* border: 1px solid red; */
 }
 
 .button-group button {
@@ -67,17 +72,76 @@ button {
     font-weight: bold;
 }
 
-.print {
+.close-top,
+.close-bottom {
+    /* display: inline-block; */
+    width: fit-content;
+    font-size: 12px;
+}
+
+.close-top:hover,
+.close-bottom:hover {
+    color: #333333;
     font-size: 16px;
+    left: 1.75vw;
+}
+
+.close-top {
+    position: relative;
+    top: -2vh;
+    left: 2.5vw;
+    /* border: 1px solid red; */
+}
+
+.close-bottom {
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    /* border: 1px solid red; */
+}
+
+.q1, .q3, .q5, .q7, .q9, .q11, .q13, .q15 {
+    box-shadow: 2px 2px#333333;
+    transition: all .5s;
+}
+
+.q2, .q4, .q6, .q8, .q10, .q12, .q14, .q16 {
+    box-shadow: -2px 2px#333333;
+    transition: all .5s;
+}
+
+.q1:hover, .q3:hover, .q5:hover, .q7:hover, .q9:hover, .q11:hover, .q13:hover, .q15:hover {
+    border: 3px solid #FFFFFF;
+    box-shadow: none;
+    transform: translate(.5vh);
+}
+
+.q2:hover, .q4:hover, .q6:hover, .q8:hover, .q10:hover, .q12:hover, .q14:hover, .q16:hover {
+    border: 3px solid #FFFFFF;
+    box-shadow: none;
+    transform: translate(-.5vh);
+}
+
+.print {
+    position: absolute;
+    /* left: -1vw; */
+    left: 6vw;
+    /* top: 80vh; */
+    bottom: 10vh;
+    font-size: 12px;
     font-weight: bold;
     color: #FFBD2D;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 }
+
+/* .print div.goto:hover {
+    font-size: 12px;
+} */
 
 .right {
     /* left: 20%;
     right: 0; */
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 85vw;
     height: 97vh;
 }
@@ -160,11 +224,14 @@ img {
 
 .back {
     position: relative;
+    top: .25vh;
     left: 20vw;
     transition: border-radius 1s, box-shadow 1s;
 }
 
 .back:hover {
+    top: 0vh;
+    /* left: 19.5vh; */
     border-radius: 0;
     box-shadow: 5px 5px #333333;
     /* position: relative;
@@ -175,11 +242,13 @@ img {
 
 .next {
     position: relative;
+    top: .25vh;
     left: 45vw;
     transition: border-radius 1s, box-shadow 1s;
 }
 
 .next:hover {
+    top: 0vh;
     border-radius: 0;
     box-shadow: -5px 5px #333333;
     /* transform: all 5s; */
