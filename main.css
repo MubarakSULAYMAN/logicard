@@ -65,8 +65,6 @@ div.goto:hover .button-group {
 }
 
 .close {
-    /* display: inline; */
-    /* border: 1px solid red; */
     width: 0;
     height: 0;
 }
@@ -94,8 +92,6 @@ div.goto:hover .button-group {
 .close-top:focus,
 .close-bottom:focus {
     color: #FFBD2D;
-    /* font-size: 8px;
-    left: 3.5vw; */
 }
 
 .close-top {
@@ -245,7 +241,6 @@ img {
 
 button.back:focus,
 button.next:focus {
-    /* border: 2px solid #FFFFFF; */
     border-radius: 0;
     color: #FFFFFF;
     background-color: #FFBD2D;
@@ -274,7 +269,6 @@ button.next:focus {
     box-shadow: -5px 5px #333333;
 }
 
-/* @media only screen and (min-width: 600px) and (max-width: 768px) { */
 @media only screen and (max-width: 768px) {
     div.goto {
         position: relative;
@@ -322,8 +316,6 @@ button.next:focus {
     .close-top:focus,
     .close-bottom:focus {
         color: #FFBD2D;
-        /* font-size: 8px;
-        left: 3.5vw; */
     }
 
     .close-top {
@@ -449,24 +441,12 @@ button.next:focus {
 
 }
 
-/* @media only screen and (min-width: 320px) and (max-width: 425px) { */
 @media only screen and (max-width: 425px) {
-    /* body {
-        border: 1px solid red;
-    } */
-
-    /* .left {
-        width: 15vw;
-        height: 97vh;
-        border: 1px solid red;
-    } */
-
     div.goto {
         position: relative;
         left: 0vw;
         width: 40px;
         height: 40px;
-        /* height: 80px; */
         font-size: 10px;
     }
 
@@ -500,18 +480,8 @@ button.next:focus {
         font-weight: bold;
     }
 
-    .close-top,
-    .close-bottom {
-        position: relative;
-        /* top: 5vh; */
-        /* left: 5vw !important; */
-        /* width: fit-content; */
-        /* font-size: 18px; */
-    }
-
     .close-top:hover,
     .close-bottom:hover {
-        /* color: #333333; */
         font-size: 12px;
         left: 2vw;
     }
@@ -519,67 +489,15 @@ button.next:focus {
     .close-top:focus,
     .close-bottom:focus {
         color: #FFBD2D;
-        /* font-size: 8px;
-        left: 3.5vw; */
     }
 
     .close-top {
-        /* top: -3vh; */
         left: 4vw;
     }
 
     .close-bottom {
-        /* top: 3vh; */
         left: 4vw;
     }
-
-    /* .q1,
-    .q3,
-    .q5,
-    .q7,
-    .q9,
-    .q11,
-    .q13,
-    .q15 {
-        box-shadow: 1px 1px#333333;
-    } */
-
-    /* .q2,
-    .q4,
-    .q6,
-    .q8,
-    .q10,
-    .q12,
-    .q14,
-    .q16 {
-        box-shadow: -1px 1px#333333;
-    } */
-
-    /* .q1:hover,
-    .q3:hover,
-    .q5:hover,
-    .q7:hover,
-    .q9:hover,
-    .q11:hover,
-    .q13:hover,
-    .q15:hover {
-        border: 2px solid #FFFFFF;
-        box-shadow: none;
-        transform: translate(.5vh);
-    } */
-
-    /* .q2:hover,
-    .q4:hover,
-    .q6:hover,
-    .q8:hover,
-    .q10:hover,
-    .q12:hover,
-    .q14:hover,
-    .q16:hover {
-        border: 2px solid #FFFFFF;
-        box-shadow: none;
-        transform: translate(-.5vh);
-    } */
 
     .print {
         position: absolute;
@@ -589,9 +507,6 @@ button.next:focus {
     }
 
     img {
-        /* position: relative;
-        top: .5%;
-        left: 50%; */
         width: 50px;
     }
 
@@ -638,39 +553,22 @@ button.next:focus {
     }
 
     .back {
-        /* position: relative; */
-        /* top: .25vh; */
         left: 10vw;
         transition: border-radius 1s, box-shadow 1s, top 1s;
     }
-    
+
     .back:hover {
         top: -2.5vh;
-        /* border-radius: 0; */
         box-shadow: 2.5px 2.5px #333333;
     }
-    
+
     .next {
-        /* position: relative; */
-        /* top: .25vh; */
         left: 35vw;
         transition: border-radius 1s, box-shadow 1s, top 1s;
     }
-    
+
     .next:hover {
         top: -2.5vh;
-        /* border-radius: 0; */
         box-shadow: -2.5px 2.5px #333333;
     }
-
-    /* .back:hover {
-        box-shadow: 2.5px 2.5px #333333;
-    } */
-
-    /* .next:hover {
-        top: 0vh;
-        border-radius: 0;
-        box-shadow: -2.5px 2.5px #333333;
-    } */
-
 }
