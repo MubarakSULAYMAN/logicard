@@ -269,18 +269,18 @@ button.next:focus {
     box-shadow: -5px 5px #333333;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     div.goto {
         position: relative;
         top: .5vh;
-        left: 1vw;
-        width: 50px;
-        height: 50px;
-        font-size: 12px;
+        left: 2vw;
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
     }
 
     div.goto:hover {
-        width: 90px;
+        width: 100px;
         height: 380px;
         border-radius: 60px;
     }
@@ -301,7 +301,7 @@ button.next:focus {
     .close-top,
     .close-bottom {
         position: relative;
-        left: 2vw;
+        left: 1.5vw;
         width: fit-content;
         font-size: 8px;
     }
@@ -376,23 +376,23 @@ button.next:focus {
 
     .print {
         position: absolute;
-        left: 2.5vw;
-        bottom: 12vh;
+        left: 2vw;
+        bottom: 10vh;
         font-size: 8px;
     }
 
-    img {
-        position: relative;
-        top: .5%;
-        left: 50%;
-        width: 50px;
-    }
+    /* img {
+        position: relative; */
+        /* top: .5%; */
+        /* left: 60%;
+        width: 50px; */
+    /* } */
 
     .form {
         position: relative;
         top: 2vh;
-        left: 6vh;
-        width: 600px;
+        left: 4vh;
+        width: 820px;
         height: 340px;
         border: 1.5px solid #EDEDED;
         background-color: #FFFFFF;
@@ -432,13 +432,186 @@ button.next:focus {
         box-shadow: 2.5px 2.5px #333333;
     }
 
+    .next {
+        left: 55vw;
+        /* transition: border-radius 1s, box-shadow 1s, top 1s; */
+    }
+
     .next:hover {
         top: 0vh;
         border-radius: 0;
         box-shadow: -2.5px 2.5px #333333;
     }
+}
 
+@media only screen and (max-width: 768px) {
+    div.goto {
+        position: relative;
+        top: .5vh;
+        left: 1vw;
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
 
+    div.goto:hover {
+        width: 90px;
+        height: 380px;
+        border-radius: 60px;
+    }
+
+    /* div.goto:hover .button-group {
+        position: absolute;
+        top: 6vh;
+    }
+
+    .button-group button {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        font-size: 8px;
+        font-weight: bold;
+    } */
+
+    .close-top,
+    .close-bottom {
+        position: relative;
+        left: 2vw;
+        width: fit-content;
+        font-size: 8px;
+    }
+
+    /* .close-top:hover,
+    .close-bottom:hover {
+        color: #333333;
+        font-size: 10px;
+        left: 1.5vw;
+    }
+
+    .close-top:focus,
+    .close-bottom:focus {
+        color: #FFBD2D;
+    }
+
+    .close-top {
+        top: -6vh;
+    }
+
+    .close-bottom {
+        top: -2vh;
+    } */
+
+    /* .q1,
+    .q3,
+    .q5,
+    .q7,
+    .q9,
+    .q11,
+    .q13,
+    .q15 {
+        box-shadow: 1px 1px#333333;
+    }
+
+    .q2,
+    .q4,
+    .q6,
+    .q8,
+    .q10,
+    .q12,
+    .q14,
+    .q16 {
+        box-shadow: -1px 1px#333333;
+    }
+
+    .q1:hover,
+    .q3:hover,
+    .q5:hover,
+    .q7:hover,
+    .q9:hover,
+    .q11:hover,
+    .q13:hover,
+    .q15:hover {
+        border: 2px solid #FFFFFF;
+        box-shadow: none;
+        transform: translate(.5vh);
+    }
+
+    .q2:hover,
+    .q4:hover,
+    .q6:hover,
+    .q8:hover,
+    .q10:hover,
+    .q12:hover,
+    .q14:hover,
+    .q16:hover {
+        border: 2px solid #FFFFFF;
+        box-shadow: none;
+        transform: translate(-.5vh);
+    } */
+
+    .print {
+        position: absolute;
+        left: 2.5vw;
+        bottom: 12vh;
+        font-size: 8px;
+    }
+
+    img {
+        position: relative;
+        top: .5%;
+        left: 50%;
+        width: 50px;
+    }
+
+    .form {
+        position: relative;
+        top: 2vh;
+        left: 6vh;
+        width: 600px;
+        height: 340px;
+        border: 1.5px solid #EDEDED;
+        background-color: #FFFFFF;
+        transition: box-shadow .5s;
+    /* }
+
+    .form:hover {
+        box-shadow: -2px 2px 2.5px .25px #EDEDED;
+    }
+
+    .form::before,
+    .form::after {
+        border: 1.5px solid #EDEDED;
+    }
+
+    .form::before {
+        left: -10px;
+        top: 7px;
+        z-index: -1;
+    }
+
+    .form::after {
+        left: -20px;
+        top: 15px;
+        z-index: -2;
+        box-shadow: -7.5px 7.5px #EDEDED;
+    }
+
+    .back,
+    .next {
+        padding: 7.5px 15px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .back:hover {
+        box-shadow: 2.5px 2.5px #333333;
+    }
+
+    .next:hover {
+        top: 0vh;
+        border-radius: 0;
+        box-shadow: -2.5px 2.5px #333333;
+    } */
 }
 
 @media only screen and (max-width: 425px) {
@@ -514,7 +687,7 @@ button.next:focus {
         position: relative;
         top: 2vh;
         left: 4vh;
-        width: 240px;
+        width: 320px;
         height: 360px;
         border: 1px solid #EDEDED;
         background-color: #FFFFFF;
@@ -563,7 +736,7 @@ button.next:focus {
     }
 
     .next {
-        left: 35vw;
+        left: 45vw;
         transition: border-radius 1s, box-shadow 1s, top 1s;
     }
 
@@ -571,4 +744,28 @@ button.next:focus {
         top: -2.5vh;
         box-shadow: -2.5px 2.5px #333333;
     }
+}
+
+@media only screen and (max-width: 375px) {
+    .form {
+        width: 280px;
+        height: 360px;
+    }
+
+    .next {
+        left: 40vw;
+        /* transition: border-radius 1s, box-shadow 1s, top 1s; */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .form {
+        width: 240px;
+        height: 360px;
+    }
+
+    /* .next {
+        left: 35vw;
+        transition: border-radius 1s, box-shadow 1s, top 1s;
+    } */
 }
