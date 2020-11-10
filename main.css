@@ -754,14 +754,14 @@ button.next:focus {
     }
 
     .next {
-        left: 40vw;
+        left: 35vw;
         /* transition: border-radius 1s, box-shadow 1s, top 1s; */
     }
 }
 
 @media only screen and (max-width: 320px) {
     .form {
-        width: 240px;
+        width: 230px;
         height: 360px;
     }
 
