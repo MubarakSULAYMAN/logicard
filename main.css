@@ -771,7 +771,7 @@ button.next:focus {
     } */
 }
 
-@media only screen and (max-width: 2560px) {
+/* @media only screen and (max-width: 2560px) {
 
     .print {
         position: absolute;
@@ -791,6 +791,5 @@ button.next:focus {
 
     .next {
         left: 60vw;
-        /* transition: border-radius 1s, box-shadow 1s, top 1s; */
     }
-}
+} */
